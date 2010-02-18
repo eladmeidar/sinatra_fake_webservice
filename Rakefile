@@ -5,12 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "sinatra_fake_webservice"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "elad@eizesus.com"
+    gem.summary = %Q{TODO: use a sinatra application in your Rails test environment to fake a remote web service that needs more magic than Fakeweb}
+    gem.description = %Q{TODO: FakeWeb allows you to fake a response from a specific url, this gem intends to give developers the option to allow several responses from the same url based on parameters (ex: WSDL)}
+    gem.email = "elad@nautilus6.com"
     gem.homepage = "http://github.com/eladmeidar/sinatra_fake_webservice"
     gem.authors = ["Elad Meidar"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_dependency 'sinatra'
+    
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
