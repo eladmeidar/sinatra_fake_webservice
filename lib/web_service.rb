@@ -18,7 +18,9 @@ class WebService
   
   def run
     app = Thread.new("running_#{self.name}") do
-      App.run! :host => @host, :port => @port
+      silence_stream(STDOUT) do
+        App.run! :host => @host, :port => @port
+      end
     end
     sleep 1
   end
