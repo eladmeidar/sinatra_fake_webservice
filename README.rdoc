@@ -11,16 +11,16 @@ FakeWeb is awesome, but it allows you only to register *one* response per url, a
 Command line:
 	sudo gem install sinatra_fake_webservice+
 
-Or in bundler (0.9.x) add this line to your +.gemfile+:
+Or in bundler (0.9.x) add this line to your .gemfile:
 
-	gem 'sinatra_fake_webservice', :group => :test+
+	gem 'sinatra_fake_webservice', :group => :test
 
 
 == Usage
 
 First you'll need to create a SinatraWebService instance that can accept +:host+ and +:port+ options:
 
-+@fakews = SinatraWebService.new :host => 'localhost', :port => 7000+
++@fakews = SinatraWebService.new :host => 'localhost', :port => 7000
 
 and then simply use the familiar sinatra DSL to create methods and responses.
 
