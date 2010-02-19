@@ -1,36 +1,53 @@
 
 
 class SinatraWebService
-  attr_reader :services
-
-  def initialize
-    
+  
+  attr_accessor :host, :port
+  
+  class SinatraStem < Sinatra::Base      
+    get '/' do
+      "Hello! i am lindesy lohan!"
+    end
+  end
+  
+  
+  def initialize(options = {})
+    @host = options[:host] ||= 'localhost'
+    @port = options[:port] ||= 4567
   end
   
   def running?
     false
   end
-  
-  def initialize
-    @services = []
-  end
-  
-  def services
-    @services.dup.freeze
-  end
 
   def run!
-    @services.each do |service|
-      puts "== Loading service #{service.name}"
-      service.run
+    @port = find_free_port
+    
+    app = Thread.new("running_app") do
+        SinatraStem.run! :post => @host, :port => @port.to_i
+      sleep 1
     end
   end
   
-  def add_service(service = nil)
-    raise "Tried to add an empty service" if service.nil?
-    raise "Only WebService Objects are allowed" if !(service.is_a?(WebService))
-    
-    @services << service
+  def find_free_port
+    found = false
+    attempts = 0
+    while !found and attempts < 10
+      puts "\n== Trying port #{@port}"
+      begin
+        res = Net::HTTP.start(host,port) do |http|
+          http.get('/')
+        end
+        attempts += 1
+        @port = @port.succ
+      rescue Errno::ECONNREFUSED
+        return @port
+      end
+    end
+  end
+  
+  def method_missing(method, *args, &block)
+    SinatraStem.send(method, *args, &block) unless method.to_s == "proxy"
   end
 
 end

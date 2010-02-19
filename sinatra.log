@@ -1,0 +1,273 @@
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+..
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+== Someone is already performing on port 4567!
+Hiya!
+.
+Finished in 0.22206 seconds.
+
+9 tests, 10 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+..
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+== Someone is already performing on port 4567!
+Hiya!
+.
+Finished in 0.19735 seconds.
+
+9 tests, 10 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+..
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+Hiya!
+.
+Finished in 0.046046 seconds.
+
+3 tests, 4 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+..
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+== Someone is already performing on port 4567!
+Hiya!
+.
+Finished in 0.04921 seconds.
+
+9 tests, 10 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+..
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+== Someone is already performing on port 4567!
+Hiya!
+.
+Finished in 0.047577 seconds.
+
+9 tests, 10 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+..
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+== Someone is already performing on port 4567!
+Hiya!
+.
+Finished in 0.260547 seconds.
+
+9 tests, 10 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4568
+
+== Trying to run App on post 4568
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4569
+
+== Trying to run App on post 4569
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4570
+
+== Trying to run App on post 4570
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4571
+
+== Trying to run App on post 4571
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4572
+
+== Trying to run App on post 4572
+..
+== Trying to run App on post 4567
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4568
+
+== Trying to run App on post 4568
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4569
+
+== Trying to run App on post 4569
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4570
+
+== Trying to run App on post 4570
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4571
+
+== Trying to run App on post 4571
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4572
+
+== Trying to run App on post 4572
+E
+Finished in 0.045649 seconds.
+
+  1) Error:
+test: a new web service with a custom method should respond to '/test' with 'Hiya!'. (TestWebservice):
+Errno::ECONNREFUSED: Connection refused - connect(2)
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `open'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:542:in `start'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:440:in `start'
+    ./test/test_web_service.rb:31:in `__bind_1266537637_187400'
+    /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:351:in `call'
+    /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:351:in `test: a new web service with a custom method should respond to '/test' with 'Hiya!'. '
+
+9 tests, 9 assertions, 0 failures, 1 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4568
+
+== Trying to run App on post 4568
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4569
+
+== Trying to run App on post 4569
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4570
+
+== Trying to run App on post 4570
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4571
+
+== Trying to run App on post 4571
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4572
+
+== Trying to run App on post 4572
+..
+== Trying to run App on post 4567
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4568
+
+== Trying to run App on post 4568
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4569
+
+== Trying to run App on post 4569
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4570
+
+== Trying to run App on post 4570
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4571
+
+== Trying to run App on post 4571
+== Failed (undefined local variable or method `bind' for WebService::App:Class), retrying again on port 4572
+
+== Trying to run App on post 4572
+E
+Finished in 0.045099 seconds.
+
+  1) Error:
+test: a new web service with a custom method should respond to '/test' with 'Hiya!'. (TestWebservice):
+Errno::ECONNREFUSED: Connection refused - connect(2)
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `open'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:542:in `start'
+    /Users/elad/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/net/http.rb:440:in `start'
+    ./test/test_web_service.rb:31:in `__bind_1266537644_167228'
+    /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:351:in `call'
+    /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/thoughtbot-shoulda-2.10.2/lib/shoulda/context.rb:351:in `test: a new web service with a custom method should respond to '/test' with 'Hiya!'. '
+
+9 tests, 9 assertions, 0 failures, 1 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+..
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+== Someone is already performing on port 4567!
+Hiya!
+.
+Finished in 0.047605 seconds.
+
+9 tests, 10 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+== Trying to run App on post 4567
+.== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+..
+Finished in 0.042507 seconds.
+
+8 tests, 9 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.......
+Finished in 0.000965 seconds.
+
+7 tests, 9 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.......
+Finished in 0.000975 seconds.
+
+7 tests, 9 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+..
+Finished in 0.000354 seconds.
+
+2 tests, 3 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+..
+Finished in 0.000353 seconds.
+
+2 tests, 3 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+..
+Finished in 0.000357 seconds.
+
+2 tests, 3 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+..
+Finished in 0.000355 seconds.
+
+2 tests, 3 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.....
+Finished in 0.000809 seconds.
+
+5 tests, 6 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.......
+Finished in 0.000972 seconds.
+
+7 tests, 9 assertions, 0 failures, 0 errors
+Loaded suite /Users/elad/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.......
+== Trying to run App on post 4567
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+Hiya!
+.
+Finished in 0.197477 seconds.
+
+8 tests, 10 assertions, 0 failures, 0 errors
