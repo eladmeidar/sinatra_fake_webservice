@@ -1,6 +1,36 @@
-= sinatra_fake_webservice
+= Sinatra Fake Webservice
 
-Description goes here.
+SFW provides an easy and simple wrapper for a sinatra application you can use in your tests in order to test/simulate remote API and HTTP calls and responses.
+
+== Why shouldn't i use FakeWeb?
+
+FakeWeb is awesome, but it allows you only to register *one* response per url, although in some cases you might need more than one response per url depend on your usage for example: testing an XMLRPC service or a WSDL that both might have only one url and respond based on parameters.
+
+== Installation
+
+Command line:
++sudo gem install sinatra_fake_webservice+
+
+Or in bundler (0.9.x) add this line to your +.gemfile+:
+
++gem 'sinatra_fake_webservice', :group => :test+
+
+
+== Usage
+
+First you'll need to create a SinatraWebService instance that can accept +:host+ and +:port+ options:
+
++@fakews = SinatraWebService.new :host => 'localhost', :port => 7000+
+
+and then simply use the familiar sinatra DSL to create methods and responses.
+
++@fakews.get '/awesome' do
+	"YAY!!"
+end+
+
+tada!
+
+i simplyu used Net::HTTP to access the sinatra app, but i bet there are more ways to do it.
 
 == Note on Patches/Pull Requests
  
