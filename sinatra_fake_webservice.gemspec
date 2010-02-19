@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Elad Meidar"]
   s.date = %q{2010-02-18}
-  s.description = %q{FakeWeb allows you to fake a response from a specific url, this gem intends to give developers the option to allow several responses from the same url based on parameters (ex: WSDL)}
+  s.description = %q{TODO: FakeWeb allows you to fake a response from a specific url, this gem intends to give developers the option to allow several responses from the same url based on parameters (ex: WSDL)}
   s.email = %q{elad@nautilus6.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{use a sinatra application in your Rails test environment to fake a remote web service that needs more magic than Fakeweb}
+  s.summary = %q{TODO: use a sinatra application in your Rails test environment to fake a remote web service that needs more magic than Fakeweb}
   s.test_files = [
     "test/helper.rb",
      "test/test_sinatra_fake_webservice.rb"
