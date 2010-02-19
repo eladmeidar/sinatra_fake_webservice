@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
      "lib/web_service.rb",
      "metal/sinatra_stem.rb",
      "sinatra.log",
+     "sinatra_fake_webservice.gemspec",
      "test/helper.rb",
      "test/test_sinatra_fake_webservice.rb"
   ]
