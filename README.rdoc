@@ -9,11 +9,11 @@ FakeWeb is awesome, but it allows you only to register *one* response per url, a
 == Installation
 
 Command line:
-+sudo gem install sinatra_fake_webservice+
+	sudo gem install sinatra_fake_webservice+
 
 Or in bundler (0.9.x) add this line to your +.gemfile+:
 
-+gem 'sinatra_fake_webservice', :group => :test+
+	gem 'sinatra_fake_webservice', :group => :test+
 
 
 == Usage
@@ -24,13 +24,19 @@ First you'll need to create a SinatraWebService instance that can accept +:host+
 
 and then simply use the familiar sinatra DSL to create methods and responses.
 
-+@fakews.get '/awesome' do
-	"YAY!!"
-end+
+	@fakews.get '/awesome' do
+		"YAY!!"
+	end+
 
 tada!
 
-i simplyu used Net::HTTP to access the sinatra app, but i bet there are more ways to do it.
+i simply used Net::HTTP to access the sinatra app, but i bet there are more ways to do it:
+
+	res = Net::HTTP.start(@fakews.host, @fakews.port) do |http|
+		http.get('/awesome')
+	end
+
+	assert_equal "YAY!!", res.body
 
 == Note on Patches/Pull Requests
  
