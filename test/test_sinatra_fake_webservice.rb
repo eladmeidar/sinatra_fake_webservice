@@ -23,6 +23,8 @@ class TestSinatraFakeWebservice < Test::Unit::TestCase
       @sinatra_app.put '/gimmieitnow' do
         "yay, i haz it."
       end
+      
+      #@sinatra_app.run!
     end
     
     should "have default host and port" do

@@ -30,7 +30,7 @@ class SinatraWebService
   end
 
   def run!
-    if Thread.list.size > 1
+    if Thread.list.size > 2
       Thread.list.first.kill
     end
     

@@ -9,7 +9,7 @@ FakeWeb is awesome, but it allows you only to register *one* response per url, a
 == Installation
 
 Command line:
-	sudo gem install sinatra_fake_webservice+
+	sudo gem install sinatra_fake_webservice
 
 Or in bundler (0.9.x) add this line to your .gemfile:
 
@@ -26,17 +26,33 @@ and then simply use the familiar sinatra DSL to create methods and responses.
 
 	@fakews.get '/awesome' do
 		"YAY!!"
-	end+
-
-tada!
-
-i simply used Net::HTTP to access the sinatra app, but i bet there are more ways to do it:
-
-	res = Net::HTTP.start(@fakews.host, @fakews.port) do |http|
-		http.get('/awesome')
 	end
 
-	assert_equal "YAY!!", res.body
+	@fakews.post '/omglol' do
+		"YAY!! i posted #{params[:awesome]}"
+	end
+
+	@fakews.delete '/awesome' do
+		"there, i kiiled #{params[:id]}"
+	end
+	
+	@fakews.put '/awesome' do
+		"yay, i saved the worlds"
+	end
+	
+tada!
+
+== Tests
+
+I added a few methods to wrap HTTP requests:
+
+* get_response(path)
+* post_response(path, data, headers, dest)
+* put_response(path, data, headers, dest)
+* delete_response(path, data, headers, dest)
+
+The most important thing to remember, is that you'll have to point your webservice api wrapper (twitter_auth or whatever) to use "localhost" and the fake sinatra app's port, available via a simple getter (#port).
+
 
 == Note on Patches/Pull Requests
  
